@@ -1,8 +1,5 @@
 ﻿<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
 
@@ -11,15 +8,14 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" href="style.css">
-  <!-- end CSS-->
- <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="http://assets.magicjudges.org/judge-banner/judge-banner.js"></script>
 
   <script type="text/javascript">
   var names = ["Advisor", "Ally", "Angel", "Ape", "Archer", "Archon", "Boar", "Bringer", "Bird", "Badger", "Homarid", "Caribou", "Cleric", "Drone", "Cyclops", "Griffin", "Kavu", "Human", "Hydra", "Hound", "Kobold", "Kor", "Spider", "Sphinx", "Wurm", "Yeti", "Zombie", "Thrull", "Vampire", "Unicorn", "Tarpan", "Prism", "Rebel", "Soldier", "Snake", "Squid", "Merfolk", "Spirit", "Djinn", "Dragon", "Kraken", "Orgg", "Relic", "Geth", "Savra", "Praetor", "Slith", "Specter", "Siren", "Sliver", "Soltari", "Instant", "Sorcery", "Jace", "Garruk", "Gideon", "Knight", "Sarkhan", "Equip", "Enchant", "Fear", "Phasing", "Flying", "Kroog", "Magus", "Arrest", "Alpha", "Beta", "Revised", "Tempest", "Kirin", "Mana", "Forest", "Swamp", "Plains", "Taiga", "Bayou", "Tundra", "Zone", "Stack", "Fetch", "Pirate", "Archer", "Elvish", "Ritual", "Portal", "Foil", "Mint", "Promo", "Angel", "Exalted", "Unearth", "Thune", "Zodiac", "Unglued", "Gotcha", "Attack", "Untap", "Block", "Combat", "Serra", "Sengir", "Invoker", "Cycle", "Pitch", "Quest", "Noggle", "Bolt", "Recall", "Lotus", "Storm", "Guild", "Ravnica", "Urza", "Mishra", "Domain", "Buyback", "Kicker", "Reveal", "Clash", "Elspeth", "Adept", "Discard", "Modern", "Legends", "Sprite", "Faerie", "Jackal", "Seal", "Shifter", "Flash", "Ghitu", "Animate", "Eldrazi", "Token", "Efreet"]
-  
+
   function getRandomNumber(max) {
       return Math.floor(Math.random() * (max - 1));
   }
@@ -27,7 +23,7 @@
   function getRandomName() {
     return names[getRandomNumber(names.length)] + getRandomNumber(20).toString();
   }
-  
+
   //var chatURL = "http://widget.mibbit.com/?settings=6ea8f3bf38890705d34351460359c0ac&server=irc.nordunet.se&channel=%23mtgjudge&nick=" + getRandomName();
   //var chatURL = "http://irc.mtgmelb.com:7778/?nick=" + getRandomName() + "#mtgjudge";
   //var chatURL = "https://kiwiirc.com/client/efnet.port80.se/?nick=" + getRandomName() + "|?#mtgjudge";
@@ -37,23 +33,14 @@
 </head>
 
 <body>
-  <!--
-    <style>
-  div#temp p { color: red; font-weight: bold; margin-left: auto; margin-right: auto; width: 600px; text-align: center;}
-  </style>
-  <div id="temp">
-    <p>*You may experience issues connecting or get an error saying you are banned. We are aware of the problem and working to address it. Thanks for your patience.*</p>
-  </div>
--->
-
   <div id="container">
     <div id="header">
-      <img src="aska_3.png" alt="Ask A Magic Judge" class="logo"/>  
+      <img src="aska_3.png" alt="Ask A Magic Judge" class="logo"/>
       24/7 Magic the Gathering Tournament Policy Chat with Magic Judges
     </div>
     <div id="menu">
       Check out the <a target="_blank" href="http://blogs.magicjudges.org/o/communication-channels/irc-mtgjudge-faq/">Channel FAQ</a>. &nbsp;
-      Rules questions should be asked in the <a href="http://chat.magicjudges.org/mtgrules">#MTGRules Room</a>.  
+      Rules questions should be asked in the <a href="http://chat.magicjudges.org/mtgrules">#MTGRules Room</a>.
     </div>
     <div id="content">
       <script type="text/javascript">document.write('<iframe id="chatframe" src="' + chatURL + '"</iframe>')</script>
@@ -64,7 +51,7 @@
       </div>
     </div>
   </div>
-  
+
   <div id="footer">
   <p>The users and content of this chatroom are not officially associated with Wizards of the Coast (WotC) and do not speak on WotC's behalf.</p>
   </div>
