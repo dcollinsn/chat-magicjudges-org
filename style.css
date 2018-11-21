@@ -139,7 +139,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 @media only screen and (max-width: 767px) {
   #container {
-    width: calc(100vw - 10px);
+    width: calc(100% - 10px);
     height: calc(100vh - 55px - 10px);
     margin: 0;
     display: flex;
