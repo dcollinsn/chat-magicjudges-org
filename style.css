@@ -74,9 +74,16 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 }
 
 #content {
-  background:url("background.jpg") right top no-repeat;
   padding:25px 0 25px 35px;
   text-align:left;
+}
+
+#content.mtgrules {
+  background:url("/mtgrules/background.jpg") right top no-repeat;
+}
+
+#content.mtgjudge {
+  background:url("/mtgjudge/background.jpg") right top no-repeat;
 }
 
 #buttons {
