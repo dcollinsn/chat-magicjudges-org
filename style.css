@@ -92,6 +92,10 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   margin-left: 15px;
 }
 
+.mobile-links {
+  display: none;
+}
+
 #content a {
   display: block;
   margin-top: 10px;
@@ -196,8 +200,12 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   #buttons {
     margin-left: 0;
     flex: 0 1 auto;
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
+  }
+
+  .mobile-links {
+    display: initial;
   }
 
   #content a {
