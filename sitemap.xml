@@ -6,12 +6,12 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://chat.magicjudges.org/mtgrules/</loc>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-11-22T01:30:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://chat.magicjudges.org/mtgjudge/</loc>
-  <changefreq>weekly</changefreq>
+  <lastmod>2018-11-22T01:30:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 </urlset>
