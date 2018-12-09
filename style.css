@@ -140,11 +140,10 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   font-size: 80%;
 }
 
-
 @media only screen and (max-width: 767px) {
   #container {
-    width: calc(100% - 10px);
-    height: calc(100vh - 55px - 10px);
+    width: calc(100% - 10px); /* Width + Borders (5px each side) = 100% */
+    height: calc(100vh - 55px - 10px); /* Height + Borders (5px each side) + MagicJudges Menu (55px) = 100%) */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -192,7 +191,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
   #chatframe {
     border-radius: 0;
-    width: 100%;
+    width: calc(100% - 4px); /* Width + Borders (2px each side) = 100% */
     height: 90%;
     flex: 1 0 auto;
   }
@@ -222,7 +221,22 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   }
 }
 
-@media only screen and (min-width: 480px) {
-/* todo */
+@media only screen and (max-width: 480px) and (max-height: 400px) {
+  /* Hide everything that isn't the chat window and like one other thing. */
+  #judge-global-banner {
+    display: none;
+  }
+
+  #header {
+    display: none;
+  }
+
+  .mobile-links {
+    display: none;
+  }
+
+  #footer {
+    display: none;
+  }
 }
 
