@@ -17,6 +17,20 @@ a:hover, a:active { outline: 0; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
+#error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  background: #ff8c00;
+}
+
+#error-inner {
+  font-size: 24px;
+  text-align: center;
+}
+
 #container {
   border:5px solid #6e9ece;
   border-radius:16px;
@@ -140,7 +154,11 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   font-size: 80%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1189px) {
+  #error-inner {
+    font-size: 16px;
+  }
+
   #container {
     width: calc(100% - 10px); /* Width + Borders (5px each side) = 100% */
     height: calc(100vh - 55px - 10px); /* Height + Borders (5px each side) + MagicJudges Menu (55px) = 100%) */
