@@ -34,12 +34,7 @@
     return names[getRandomNumber(names.length)] + getRandomNumber(20).toString();
   }
 
-  //var chatURL = "http://widget.mibbit.com/?settings=b4286e00e34ebba2109a3943107cb58c&server=irc.inet.tele.dk&channel=%23mtgrules&nick=" + getRandomName(); // Ads
-  //var chatURL = "http://widget.mibbit.com/?settings=6ea8f3bf38890705d34351460359c0ac&server=irc.inet.tele.dk&channel=%23mtgrules&nick=" + getRandomName(); // Ads
-  //var chatURL = "https://kiwiirc.com/client/irc.inet.tele.dk/?nick=" + getRandomName() + "|?#mtgrules"; // Can't be iframed, tries to access local storage
-  //var chatURL = "http://chat.mtgmelb.com:7778/?nick=" + getRandomName() + "&channel=mtgrules"; // Broken
-  var chatURL = "http://chat.efnet.org:9090/?nick=" + getRandomName() + "&channels=%23mtgrules&Login=Login";
-  //var chatURL = "http://chat.efnet.org/irc.cgi?chan=%23mtgrules&nick=" + getRandomName(); // Bad
+  var chatURL = "https://webchat.freenode.net?channels=%23magicjudges-rules&prompt=1&uio=d4&nick=" + getRandomName();
   </script>
 </head>
 
@@ -49,20 +44,13 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div id="error">
-    <div id="error-inner">
-      You may not be able to connect at this time due to an outage with the service we use. You can use any IRC client to connect to irc.efnet.org and join to #mtgrules.
-    </div>
-  </div>
-
   <div id="container">
     <div id="header">
-        <img src="/aska_3a.png" alt="Ask A Magic Judge" class="logo"/>
+        <img src="/aska_3a.png" alt="Ask A Magic Judge" class="logo-right"/>
         24/7 Magic the Gathering Rules Q&A Chat with Magic Judges
     </div>
-    <div id="menu">
-        This channel is for rules questions only.  <a target="_blank" href="https://blogs.magicjudges.org/o/judge-program-structure/communication-channels/irc-mtgrules-faq/">Channel FAQ</a> |
-        <a href="http://chat.magicjudges.org/mtgjudge/">#MTGJudge Channel</a> for Policy and Judging chat
+    <div id="menu-rightpadding">
+        This channel is for rules questions only.  <a target="_blank" href="https://blogs.magicjudges.org/o/judge-program-structure/communication-channels/irc-mtgrules-faq/">Channel FAQ</a> &nbsp; <!-- <a href="http://chat.magicjudges.org/mtgjudge/">#MagicJudges-Policy Channel</a> -->
         <span class="mobile-links">
             <br />
             <a target="_blank" href="https://blogs.magicjudges.org/rulestips/">Daily Rules Tips Blog</a> |
