@@ -5,13 +5,13 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://chat.magicjudges.org/mtgrules/</loc>
-  <lastmod>2018-11-22T01:30:00+00:00</lastmod>
+  <loc>https://chat.magicjudges.org/mtgrules/</loc>
+  <lastmod>2018-12-24T01:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://chat.magicjudges.org/mtgjudge/</loc>
-  <lastmod>2018-11-22T01:30:00+00:00</lastmod>
+  <loc>https://chat.magicjudges.org/mtgjudge/</loc>
+  <lastmod>2018-12-24T01:00:00+00:00</lastmod>
   <priority>0.50</priority>
 </url>
 </urlset>
