@@ -17,20 +17,6 @@ a:hover, a:active { outline: 0; }
 img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
-#error {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-height: 55px;
-  background: #ff8c00;
-}
-
-#error-inner {
-  font-size: 24px;
-  text-align: center;
-}
-
 #container {
   border:5px solid #6e9ece;
   border-radius:16px;
@@ -40,12 +26,15 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   width:1190px;
 }
 
+#container.mtgjudge {
+  border-color: #ce6f6f;
+}
+
 #header {
   background:#ffffff;
   height:40px;
   text-align:center;
   font:16px Arial;
-  /*color:#b2c5ce;*/
   font-style:italic;
   line-height:40px;
   border-top-left-radius:12px;
@@ -76,15 +65,13 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   text-align: center;
 }
 
-#menu-rightpadding {
-  height: 50px;
-  background: #6e9ece;
-  padding-right:175px;
-  line-height: 50px;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
+#menu.rightpadding {
+  padding-left: initial;
+  padding-right: 175px;
+}
+
+#menu.mtgjudge {
+  background: #ce6f6f;
 }
 
 #content {
@@ -143,6 +130,10 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   vertical-align: middle;
 }
 
+#chatframe.mtgjudge {
+  border-color: #ce6f6f;
+}
+
 #footer {
   margin-left: auto;
   margin-right: auto;
@@ -155,10 +146,6 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 }
 
 @media only screen and (max-width: 1189px) {
-  #error-inner {
-    font-size: 16px;
-  }
-
   #container {
     width: calc(100% - 10px); /* Width + Borders (5px each side) = 100% */
     height: calc(100vh - 55px - 10px); /* Height + Borders (5px each side) + MagicJudges Menu (55px) = 100%) */
@@ -191,13 +178,8 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
     flex: 0 1 auto;
   }
 
-  #menu-rightpadding {
-    min-height: 40px;
-    height: auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 14px;
-    line-height: 40px;
+  #menu.rightpadding {
+    padding: 7px 5%;
   }
 
   #content {
